@@ -21,13 +21,14 @@ typedef struct{
 	int isEmpty;
 }eVehiculo;
 
+void mostrarUnVehiculo(eVehiculo vehiculo);
+int mostrarListaVehiculos(eVehiculo vehiculos[], int contVehiculos);
 void inicializarVehiculos(eVehiculo vehiculos[], int cantVehiculos);
 int obtenerIndiceLibre(eVehiculo vehiculos[], int cantVehiculos);
 int buscarIdVehiculo(eVehiculo vehiculos[], int cantVehiculos, int idVehiculo);
 int validarIdVehiculo(eVehiculo vehiculos[], int cantVehiculos, int idVehiculo);
-eVehiculo cargarDatosVehiculo(eVehiculo vehiculos[], int cantVehiculos);
-int crearNuevoVehiculo(eVehiculo vehiculos[], int cantVehiculos);
 eVehiculo actualizarUnVehiculo(eVehiculo vehiculo, int cantVehiculos);
 int actualizarVehiculoPorId(eVehiculo vehiculos[], int cantVehiculos);
+int eliminarVehiculoPorId(eVehiculo vehiculos[], int cantVehiculos);
 
 #endif /* VEHICULO_H_ */
